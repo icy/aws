@@ -1,0 +1,2 @@
+lynx -dump http://docs.amazonwebservices.com/AWSEC2/latest/APIReference/_toc.html > toc.dump
+lynx -dump http://docs.amazonwebservices.com/AmazonS3/latest/API/_toc.html >> toc.dump

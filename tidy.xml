@@ -1,0 +1,17 @@
+<UnmonitorInstancesResponse xmlns="http://ec2.amazonaws.com/doc/2010-08-31/">
+
+  <instancesSet>
+    <item>
+      <instanceId>i-43a4412a</instanceId>
+      <monitoring>
+        <state>disabling</state>
+      </monitoring>
+    </item>
+    <item>
+      <instanceId>i-23a3397d</instanceId>
+      <monitoring>
+        <state>disabling</state>
+      </monitoring>
+    </item>
+  </instancesSet>
+</UnmonitorInstancesResponse>
