@@ -6,6 +6,12 @@ sub xml2yaml {
 
   while (<STDIN>) { $result .= $_; }
 
+  #$result =~ s#(<[^/]+>)[\n\t ]+([^<]+<)#\1\2#g;
+  #$result =~ s#\n# #g;
+  #$result =~ s#> #>\n#g;                            # remove all '\n's in data
+
+  #print $result;
+
   $result =~ s#</.*>##g;                            # remove closing tags
   $result =~ s#<([a-z0-9]*).*>#$rubySymbol\1: #gi;  # opening tags -> symbols
   $result =~ s#($rubySymbol[^:]+): (.+)#\1: > \2#g; # opening tags -> symbols
