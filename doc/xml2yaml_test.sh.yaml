@@ -1,22 +1,22 @@
 # path = ./p/ApiReference-query-AllocateAddress.yaml
 ---
-publicIp: > 67.202.55.255
+ publicIp: > 67.202.55.255
 # path = ./p/ApiReference-query-AssociateAddress.yaml
 ---
-return: > true
+ return: > true
 # path = ./p/ApiReference-query-AttachVolume.yaml
 ---
-volumeId: > vol-4d826724
+ volumeId: > vol-4d826724
 instanceId: > i-6058a509
 device: > /dev/sdh
 status: > attaching
 attachTime: > 2008-05-07T11:51:50.000Z
 # path = ./p/ApiReference-query-AuthorizeSecurityGroupIngress.yaml
 ---
-return: > true
+ return: > true
 # path = ./p/ApiReference-query-BundleInstance.yaml
 ---
-requestId: > bun-c1a540a8
+ requestId: > bun-c1a540a8
 bundleInstanceTask:
   instanceId: > i-12345678
   bundleId: > bun-c1a540a8
@@ -30,7 +30,7 @@ bundleInstanceTask:
       prefix: > winami
 # path = ./p/ApiReference-query-CancelBundleTask.yaml
 ---
-bundleInstanceTask:
+ bundleInstanceTask:
   instanceId: > i-12345678
   bundleId: > bun-cla322b9
   state: > canceling
@@ -43,56 +43,34 @@ bundleInstanceTask:
       prefix: > my-new-image
 # path = ./p/ApiReference-query-CancelSpotInstanceRequests.yaml
 ---
-requestId: > 59dbff89-35bd-4eac-99ed-be587ed81825
+ requestId: > 59dbff89-35bd-4eac-99ed-be587ed81825
 spotInstanceRequestSet:
   -
     spotInstanceRequestId: > sir-e95fae02
     state: > cancelled
 # path = ./p/ApiReference-query-ConfirmProductInstance.yaml
 ---
-return: > true
+ return: > true
 ownerId: > 254933287430
 # path = ./p/ApiReference-query-CreateImage.yaml
 ---
-imageId: > ami-4fa54026
+ imageId: > ami-4fa54026
 # path = ./p/ApiReference-query-CreateKeyPair.yaml
 ---
-keyName: > gsg-keypair
+ keyName: > gsg-keypair
 keyFingerprint:
 1f:51:ae:28:bf:89:e9:d8:1f:25:5d:37:2d:7d:b8:ca:9f:f5:f1:6f
-keyMaterial: > -----BEGIN RSA PRIVATE KEY-----
-MIIEoQIBAAKCAQBuLFg5ujHrtm1jnutSuoO8Xe56LlT+HM8v/xkaa39EstM3/aFxTHgElQiJLChp
-HungXQ29VTc8rc1bW0lkdi23OH5eqkMHGhvEwqa0HWASUMll4o3o/IX+0f2UcPoKCOVUR+jx71Sg
-5AU52EQfanIn3ZQ8lFW7Edp5a3q4DhjGlUKToHVbicL5E+g45zfB95wIyywWZfeW/UUF3LpGZyq/
-ebIUlq1qTbHkLbCC2r7RTn8vpQWp47BGVYGtGSBMpTRP5hnbzzuqj3itkiLHjU39S2sJCJ0TrJx5
-i8BygR4s3mHKBj8l+ePQxG1kGbF6R4yg6sECmXn17MRQVXODNHZbAgMBAAECggEAY1tsiUsIwDl5
-91CXirkYGuVfLyLflXenxfI50mDFms/mumTqloHO7tr0oriHDR5K7wMcY/YY5YkcXNo7mvUVD1pM
-ZNUJs7rw9gZRTrf7LylaJ58kOcyajw8TsC4e4LPbFaHwS1d6K8rXh64o6WgW4SrsB6ICmr1kGQI7
-3wcfgt5ecIu4TZf0OE9IHjn+2eRlsrjBdeORi7KiUNC/pAG23I6MdDOFEQRcCSigCj+4/mciFUSA
-SWS4dMbrpb9FNSIcf9dcLxVM7/6KxgJNfZc9XWzUw77Jg8x92Zd0fVhHOux5IZC+UvSKWB4dyfcI
-tE8C3p9bbU9VGyY5vLCAiIb4qQKBgQDLiO24GXrIkswF32YtBBMuVgLGCwU9h9HlO9mKAc2m8Cm1
-jUE5IpzRjTedc9I2qiIMUTwtgnw42auSCzbUeYMURPtDqyQ7p6AjMujp9EPemcSVOK9vXYL0Ptco
-xW9MC0dtV6iPkCN7gOqiZXPRKaFbWADp16p8UAIvS/a5XXk5jwKBgQCKkpHi2EISh1uRkhxljyWC
-iDCiK6JBRsMvpLbc0v5dKwP5alo1fmdR5PJaV2qvZSj5CYNpMAy1/EDNTY5OSIJU+0KFmQbyhsbm
-rdLNLDL4+TcnT7c62/aH01ohYaf/VCbRhtLlBfqGoQc7+sAc8vmKkesnF7CqCEKDyF/dhrxYdQKB
-gC0iZzzNAapayz1+JcVTwwEid6j9JqNXbBc+Z2YwMi+T0Fv/P/hwkX/ypeOXnIUcw0Ih/YtGBVAC
-DQbsz7LcY1HqXiHKYNWNvXgwwO+oiChjxvEkSdsTTIfnK4VSCvU9BxDbQHjdiNDJbL6oar92UN7V
-rBYvChJZF7LvUH4YmVpHAoGAbZ2X7XvoeEO+uZ58/BGKOIGHByHBDiXtzMhdJr15HTYjxK7OgTZm
-gK+8zp4L9IbvLGDMJO8vft32XPEWuvI8twCzFH+CsWLQADZMZKSsBasOZ/h1FwhdMgCMcY+Qlzd4
-JZKjTSu3i7vhvx6RzdSedXEMNTZWN4qlIx3kR5aHcukCgYA9T+Zrvm1F0seQPbLknn7EqhXIjBaT
-P8TTvW/6bdPi23ExzxZn7KOdrfclYRph1LHMpAONv/x2xALIf91UB+v5ohy1oDoasL0gij1houRe
-2ERKKdwz0ZL9SWq6VTdhr/5G994CK72fy5WhyERbDjUIdHaK3M849JJuf8cSrvSb4g==
------END RSA PRIVATE KEY-----
+keyMaterial: > -----BEGIN RSA PRIVATE KEY-----   MIIEoQIBAAKCAQBuLFg5ujHrtm1jnutSuoO8Xe56LlT+HM8v/xkaa39EstM3/aFxTHgElQiJLChp   HungXQ29VTc8rc1bW0lkdi23OH5eqkMHGhvEwqa0HWASUMll4o3o/IX+0f2UcPoKCOVUR+jx71Sg   5AU52EQfanIn3ZQ8lFW7Edp5a3q4DhjGlUKToHVbicL5E+g45zfB95wIyywWZfeW/UUF3LpGZyq/   ebIUlq1qTbHkLbCC2r7RTn8vpQWp47BGVYGtGSBMpTRP5hnbzzuqj3itkiLHjU39S2sJCJ0TrJx5   i8BygR4s3mHKBj8l+ePQxG1kGbF6R4yg6sECmXn17MRQVXODNHZbAgMBAAECggEAY1tsiUsIwDl5   91CXirkYGuVfLyLflXenxfI50mDFms/mumTqloHO7tr0oriHDR5K7wMcY/YY5YkcXNo7mvUVD1pM   ZNUJs7rw9gZRTrf7LylaJ58kOcyajw8TsC4e4LPbFaHwS1d6K8rXh64o6WgW4SrsB6ICmr1kGQI7   3wcfgt5ecIu4TZf0OE9IHjn+2eRlsrjBdeORi7KiUNC/pAG23I6MdDOFEQRcCSigCj+4/mciFUSA   SWS4dMbrpb9FNSIcf9dcLxVM7/6KxgJNfZc9XWzUw77Jg8x92Zd0fVhHOux5IZC+UvSKWB4dyfcI   tE8C3p9bbU9VGyY5vLCAiIb4qQKBgQDLiO24GXrIkswF32YtBBMuVgLGCwU9h9HlO9mKAc2m8Cm1   jUE5IpzRjTedc9I2qiIMUTwtgnw42auSCzbUeYMURPtDqyQ7p6AjMujp9EPemcSVOK9vXYL0Ptco   xW9MC0dtV6iPkCN7gOqiZXPRKaFbWADp16p8UAIvS/a5XXk5jwKBgQCKkpHi2EISh1uRkhxljyWC   iDCiK6JBRsMvpLbc0v5dKwP5alo1fmdR5PJaV2qvZSj5CYNpMAy1/EDNTY5OSIJU+0KFmQbyhsbm   rdLNLDL4+TcnT7c62/aH01ohYaf/VCbRhtLlBfqGoQc7+sAc8vmKkesnF7CqCEKDyF/dhrxYdQKB   gC0iZzzNAapayz1+JcVTwwEid6j9JqNXbBc+Z2YwMi+T0Fv/P/hwkX/ypeOXnIUcw0Ih/YtGBVAC   DQbsz7LcY1HqXiHKYNWNvXgwwO+oiChjxvEkSdsTTIfnK4VSCvU9BxDbQHjdiNDJbL6oar92UN7V   rBYvChJZF7LvUH4YmVpHAoGAbZ2X7XvoeEO+uZ58/BGKOIGHByHBDiXtzMhdJr15HTYjxK7OgTZm   gK+8zp4L9IbvLGDMJO8vft32XPEWuvI8twCzFH+CsWLQADZMZKSsBasOZ/h1FwhdMgCMcY+Qlzd4   JZKjTSu3i7vhvx6RzdSedXEMNTZWN4qlIx3kR5aHcukCgYA9T+Zrvm1F0seQPbLknn7EqhXIjBaT   P8TTvW/6bdPi23ExzxZn7KOdrfclYRph1LHMpAONv/x2xALIf91UB+v5ohy1oDoasL0gij1houRe   2ERKKdwz0ZL9SWq6VTdhr/5G994CK72fy5WhyERbDjUIdHaK3M849JJuf8cSrvSb4g==   -----END RSA PRIVATE KEY-----
 # path = ./p/ApiReference-query-CreatePlacementGroup.yaml
 ---
-requestId: > d4904fd9-82c2-4ea5-adfe-a9cc3EXAMPLE
+ requestId: > d4904fd9-82c2-4ea5-adfe-a9cc3EXAMPLE
 return: > true
 # path = ./p/ApiReference-query-CreateSecurityGroup.yaml
 ---
-return: > true
+ return: > true
 # path = ./p/ApiReference-query-CreateSnapshot.yaml
 ---
-snapshotId: > snap-78a54011
+ snapshotId: > snap-78a54011
 volumeId: > vol-4d826724
 volumeSize: > 10
 status: > pending
@@ -102,18 +80,18 @@ ownerId: > 213457642086
 description: > Daily Backup
 # path = ./p/ApiReference-query-CreateSpotDatafeedSubscription.yaml
 ---
-spotDatafeedSubscription:
+ spotDatafeedSubscription:
   ownerId: > 254933287430
   bucket: > my-bucket
   prefix:
   state: > open
 # path = ./p/ApiReference-query-CreateTags.yaml
 ---
-requestId: > 7a62c49f-347e-4fc4-9331-6e8eEXAMPLE
+ requestId: > 7a62c49f-347e-4fc4-9331-6e8eEXAMPLE
 return: > true
 # path = ./p/ApiReference-query-CreateVolume.yaml
 ---
-volumeId: > vol-4d826724
+ volumeId: > vol-4d826724
 size: > 800
 status: > creating
 createTime: > 2008-05-07T11:51:50.000Z
@@ -121,29 +99,29 @@ availabilityZone: > us-east-1a
 snapshotId:
 # path = ./p/ApiReference-query-DeleteKeyPair.yaml
 ---
-return: > true
+ return: > true
 # path = ./p/ApiReference-query-DeletePlacementGroup.yaml
 ---
-requestId: > d4904fd9-82c2-4ea5-adfe-a9cc3EXAMPLE
+ requestId: > d4904fd9-82c2-4ea5-adfe-a9cc3EXAMPLE
 return: > true
 # path = ./p/ApiReference-query-DeleteSecurityGroup.yaml
 ---
-return: > true
+ return: > true
 # path = ./p/ApiReference-query-DeleteSnapshot.yaml
 ---
-return: > true
+ return: > true
 # path = ./p/ApiReference-query-DeleteSpotDatafeedSubscription.yaml
 ---
-return: > true
+ return: > true
 # path = ./p/ApiReference-query-DeleteVolume.yaml
 ---
-return: > true
+ return: > true
 # path = ./p/ApiReference-query-DeregisterImage.yaml
 ---
-return: > true
+ return: > true
 # path = ./p/ApiReference-query-DescribeAddresses.yaml
 ---
-requestId: > 59dbff89-35bd-4eac-99ed-be587EXAMPLE
+ requestId: > 59dbff89-35bd-4eac-99ed-be587EXAMPLE
 addressesSet:
   -
     publicIp: > 67.202.55.255
@@ -153,7 +131,7 @@ addressesSet:
     instanceId:
 # path = ./p/ApiReference-query-DescribeAvailabilityZones.yaml
 ---
-requestId: > 59dbff89-35bd-4eac-99ed-be587EXAMPLE
+ requestId: > 59dbff89-35bd-4eac-99ed-be587EXAMPLE
 availabilityZoneInfo:
   -
     zoneName: > us-east-1a
@@ -177,14 +155,14 @@ availabilityZoneInfo:
     messageSet:
 # path = ./p/ApiReference-query-DescribeImageAttribute.yaml
 ---
-requestId: > 59dbff89-35bd-4eac-99ed-be587EXAMPLE
+ requestId: > 59dbff89-35bd-4eac-99ed-be587EXAMPLE
 imageId: > ami-2bb65342
 productCodes:
   -
     productCode: > 774F4FF8
 # path = ./p/ApiReference-query-DescribeImages.yaml
 ---
-requestId: > 59dbff89-35bd-4eac-99ed-be587EXAMPLE
+ requestId: > 59dbff89-35bd-4eac-99ed-be587EXAMPLE
 imagesSet:
 -
   imageId: > ami-dd20c3b4
@@ -203,12 +181,12 @@ imagesSet:
   tagSet:
 # path = ./p/ApiReference-query-DescribeInstanceAttribute.yaml
 ---
-instanceId: > i-10a64379
+ instanceId: > i-10a64379
 kernel:
   value: > aki-f70657b2
 # path = ./p/ApiReference-query-DescribeInstances.yaml
 ---
-requestId: > 59dbff89-35bd-4eac-99ed-be587EXAMPLE
+ requestId: > 59dbff89-35bd-4eac-99ed-be587EXAMPLE
 reservationSet:
   -
     reservationId: > r-bc7e30d7
@@ -256,7 +234,7 @@ reservationSet:
         tagSet:
 # path = ./p/ApiReference-query-DescribeRegions.yaml
 ---
-requestId: > 59dbff89-35bd-4eac-99ed-be587EXAMPLE
+ requestId: > 59dbff89-35bd-4eac-99ed-be587EXAMPLE
 regionInfo:
   -
     regionName: > ap-southeast-1
@@ -264,14 +242,14 @@ regionInfo:
     ec2.ap-southeast-1.amazonaws.com
 # path = ./p/ApiReference-query-DescribeSnapshotAttribute.yaml
 ---
-requestId: > 59dbff89-35bd-4eac-99ed-be587EXAMPLE
+ requestId: > 59dbff89-35bd-4eac-99ed-be587EXAMPLE
 snapshotId: > snap-78a54011
 createVolumePermission:
   -
     group: > all
 # path = ./p/ApiReference-query-DescribeSnapshots.yaml
 ---
-requestId: > 59dbff89-35bd-4eac-99ed-be587EXAMPLE
+ requestId: > 59dbff89-35bd-4eac-99ed-be587EXAMPLE
 snapshotSet:
   -
     snapshotId: > snap-1a2b3c4d
@@ -288,7 +266,7 @@ snapshotSet:
         value: > demo_db_14_backup
 # path = ./p/ApiReference-query-DescribeSpotDatafeedSubscription.yaml
 ---
-requestId: > 59dbff89-35bd-4eac-99ed-be587EXAMPLE
+ requestId: > 59dbff89-35bd-4eac-99ed-be587EXAMPLE
 spotDatafeedSubscription:
   ownerId: > 999988887777
   bucket: > mybucket
@@ -296,51 +274,44 @@ spotDatafeedSubscription:
   state: > Active
 # path = ./p/ApiReference-query-DetachVolume.yaml
 ---
-volumeId: > vol-4d826724
+ volumeId: > vol-4d826724
 instanceId: > i-6058a509
 device: > /dev/sdh
 status: > detaching
 attachTime: > 2008-05-08T11:51:50.000Z
 # path = ./p/ApiReference-query-DisassociateAddress.yaml
 ---
-return: > true
+ return: > true
 # path = ./p/ApiReference-query-GetConsoleOutput.yaml
 ---
-instanceId: > i-28a64341
+ instanceId: > i-28a64341
 timestamp: > 2007-01-03 15:00:00
 output:
-TGludXggdmVyc2lvbiAyLjYuMTYteGVuVSAoYnVpbGRlckBwYXRjaGJhdC5hbWF6b25zYSkgKGdj
-YyB2ZXJzaW9uIDQuMC4xIDIwMDUwNzI3IChSZWQgSGF0IDQuMC4xLTUpKSAjMSBTTVAgVGh1IE9j
-dCAyNiAwODo0MToyNiBTQVNUIDIwMDYKQklPUy1wcm92aWRlZCBwaHlzaWNhbCBSQU0gbWFwOgpY
-ZW46IDAwMDAwMDAwMDAwMDAwMDAgLSAwMDAwMDAwMDZhNDAwMDAwICh1c2FibGUpCjk4ME1CIEhJ
-R0hNRU0gYXZhaWxhYmxlLgo3MjdNQiBMT1dNRU0gYXZhaWxhYmxlLgpOWCAoRXhlY3V0ZSBEaXNh
-YmxlKSBwcm90ZWN0aW9uOiBhY3RpdmUKSVJRIGxvY2t1cCBkZXRlY3Rpb24gZGlzYWJsZWQKQnVp
-bHQgMSB6b25lbGlzdHMKS2VybmVsIGNvbW1hbmQgbGluZTogcm9vdD0vZGV2L3NkYTEgcm8gNApF
-bmFibGluZyBmYXN0IEZQVSBzYXZlIGFuZCByZXN0b3JlLi4uIGRvbmUuCg==
+TGludXggdmVyc2lvbiAyLjYuMTYteGVuVSAoYnVpbGRlckBwYXRjaGJhdC5hbWF6b25zYSkgKGdj   YyB2ZXJzaW9uIDQuMC4xIDIwMDUwNzI3IChSZWQgSGF0IDQuMC4xLTUpKSAjMSBTTVAgVGh1IE9j   dCAyNiAwODo0MToyNiBTQVNUIDIwMDYKQklPUy1wcm92aWRlZCBwaHlzaWNhbCBSQU0gbWFwOgpY   ZW46IDAwMDAwMDAwMDAwMDAwMDAgLSAwMDAwMDAwMDZhNDAwMDAwICh1c2FibGUpCjk4ME1CIEhJ   R0hNRU0gYXZhaWxhYmxlLgo3MjdNQiBMT1dNRU0gYXZhaWxhYmxlLgpOWCAoRXhlY3V0ZSBEaXNh   YmxlKSBwcm90ZWN0aW9uOiBhY3RpdmUKSVJRIGxvY2t1cCBkZXRlY3Rpb24gZGlzYWJsZWQKQnVp   bHQgMSB6b25lbGlzdHMKS2VybmVsIGNvbW1hbmQgbGluZTogcm9vdD0vZGV2L3NkYTEgcm8gNApF   bmFibGluZyBmYXN0IEZQVSBzYXZlIGFuZCByZXN0b3JlLi4uIGRvbmUuCg==
 # path = ./p/ApiReference-query-GetPasswordData.yaml
 ---
-instanceId: > i-2574e22a
+ instanceId: > i-2574e22a
 timestamp: > 2009-10-24 15:00:00
 passwordData:
 TGludXggdmVyc2lvbiAyLjYuMTYteGVuVSAoYnVpbGRlckBwYXRjaGJhdC5hbWF6b25zYSkgKGdj
 # path = ./p/ApiReference-query-ImportKeyPair.yaml
 ---
-requestId: > 7a62c49f-347e-4fc4-9331-6e8eEXAMPLE
+ requestId: > 7a62c49f-347e-4fc4-9331-6e8eEXAMPLE
 keyName: > gsg-keypair
 keyFingerprint:
 1f:51:ae:28:bf:89:e9:d8:1f:25:5d:37:2d:7d:b8:ca:9f:f5:f1:6f
 # path = ./p/ApiReference-query-ModifyImageAttribute.yaml
 ---
-return: > true
+ return: > true
 # path = ./p/ApiReference-query-ModifyInstanceAttribute.yaml
 ---
-return: > true
+ return: > true
 # path = ./p/ApiReference-query-ModifySnapshotAttribute.yaml
 ---
-return: > true
+ return: > true
 # path = ./p/ApiReference-query-MonitorInstances.yaml
 ---
-instancesSet:
+ instancesSet:
   -
     instanceId: > i-43a4412a
     monitoring:
@@ -351,19 +322,19 @@ instancesSet:
       state: > pending
 # path = ./p/ApiReference-query-PurchaseReservedInstancesOffering.yaml
 ---
-reservedInstancesId: > reservation-1001001
+ reservedInstancesId: > reservation-1001001
 # path = ./p/ApiReference-query-RebootInstances.yaml
 ---
-return: > true
+ return: > true
 # path = ./p/ApiReference-query-RegisterImage.yaml
 ---
-imageId: > ami-78a54043
+ imageId: > ami-78a54043
 # path = ./p/ApiReference-query-ReleaseAddress.yaml
 ---
-return: > true
+ return: > true
 # path = ./p/ApiReference-query-RequestSpotInstances.yaml
 ---
-spotInstanceRequestSet:
+ spotInstanceRequestSet:
   -
     spotInstanceRequestId: > sir-f102a405
     spotPrice: > 0.50
@@ -384,19 +355,19 @@ spotInstanceRequestSet:
     productDescription:
 # path = ./p/ApiReference-query-ResetImageAttribute.yaml
 ---
-return: > true
+ return: > true
 # path = ./p/ApiReference-query-ResetInstanceAttribute.yaml
 ---
-return: > true
+ return: > true
 # path = ./p/ApiReference-query-ResetSnapshotAttribute.yaml
 ---
-return: > true
+ return: > true
 # path = ./p/ApiReference-query-RevokeSecurityGroupIngress.yaml
 ---
-return: > true
+ return: > true
 # path = ./p/ApiReference-query-StartInstances.yaml
 ---
-instancesSet:
+ instancesSet:
   -
     instanceId: > i-10a64379
     currentState:
@@ -407,7 +378,7 @@ instancesSet:
       name: > stopped
 # path = ./p/ApiReference-query-TerminateInstances.yaml
 ---
-instancesSet:
+ instancesSet:
   -
     instanceId: > i-3ea74257
     currentState:
@@ -418,7 +389,7 @@ instancesSet:
       name: > running
 # path = ./p/ApiReference-query-UnmonitorInstances.yaml
 ---
-instancesSet:
+ instancesSet:
   -
     instanceId: > i-43a4412a
     monitoring:
@@ -429,23 +400,23 @@ instancesSet:
       state: > disabling
 # path = ./p/ApiReference-soap-AllocateAddress.yaml
 ---
-publicIp: > 67.202.55.255
+ publicIp: > 67.202.55.255
 # path = ./p/ApiReference-soap-AssociateAddress.yaml
 ---
-return: > true
+ return: > true
 # path = ./p/ApiReference-soap-AttachVolume.yaml
 ---
-volumeId: > vol-4d826724
+ volumeId: > vol-4d826724
 instanceId: > i-6058a509
 device: > /dev/sdh
 status: > attaching
 attachTime: > 2008-05-07T11:51:50.000Z
 # path = ./p/ApiReference-soap-AuthorizeSecurityGroupIngress.yaml
 ---
-return: > true
+ return: > true
 # path = ./p/ApiReference-soap-BundleInstance.yaml
 ---
-requestId: > bun-c1a540a8
+ requestId: > bun-c1a540a8
 bundleInstanceTask:
   instanceId: > i-12345678
   bundleId: > bun-c1a540a8
@@ -459,7 +430,7 @@ bundleInstanceTask:
       prefix: > winami
 # path = ./p/ApiReference-soap-CancelBundleTask.yaml
 ---
-bundleInstanceTask:
+ bundleInstanceTask:
   instanceId: > i-12345678
   bundleId: > bun-cla322b9
   state: > canceling
@@ -472,56 +443,34 @@ bundleInstanceTask:
       prefix: > my-new-image
 # path = ./p/ApiReference-soap-CancelSpotInstanceRequests.yaml
 ---
-requestId: > 59dbff89-35bd-4eac-99ed-be587ed81825
+ requestId: > 59dbff89-35bd-4eac-99ed-be587ed81825
 spotInstanceRequestSet:
   -
     spotInstanceRequestId: > sir-e95fae02
     state: > cancelled
 # path = ./p/ApiReference-soap-ConfirmProductInstance.yaml
 ---
-return: > true
+ return: > true
 ownerId: > 254933287430
 # path = ./p/ApiReference-soap-CreateImage.yaml
 ---
-ImageId: > ami-4fa54026
+ ImageId: > ami-4fa54026
 # path = ./p/ApiReference-soap-CreateKeyPair.yaml
 ---
-keyName: > gsg-keypair
+ keyName: > gsg-keypair
 keyFingerprint:
 1f:51:ae:28:bf:89:e9:d8:1f:25:5d:37:2d:7d:b8:ca:9f:f5:f1:6f
-keyMaterial: > -----BEGIN RSA PRIVATE KEY-----
-MIIEoQIBAAKCAQBuLFg5ujHrtm1jnutSuoO8Xe56LlT+HM8v/xkaa39EstM3/aFxTHgElQiJLChp
-HungXQ29VTc8rc1bW0lkdi23OH5eqkMHGhvEwqa0HWASUMll4o3o/IX+0f2UcPoKCOVUR+jx71Sg
-5AU52EQfanIn3ZQ8lFW7Edp5a3q4DhjGlUKToHVbicL5E+g45zfB95wIyywWZfeW/UUF3LpGZyq/
-ebIUlq1qTbHkLbCC2r7RTn8vpQWp47BGVYGtGSBMpTRP5hnbzzuqj3itkiLHjU39S2sJCJ0TrJx5
-i8BygR4s3mHKBj8l+ePQxG1kGbF6R4yg6sECmXn17MRQVXODNHZbAgMBAAECggEAY1tsiUsIwDl5
-91CXirkYGuVfLyLflXenxfI50mDFms/mumTqloHO7tr0oriHDR5K7wMcY/YY5YkcXNo7mvUVD1pM
-ZNUJs7rw9gZRTrf7LylaJ58kOcyajw8TsC4e4LPbFaHwS1d6K8rXh64o6WgW4SrsB6ICmr1kGQI7
-3wcfgt5ecIu4TZf0OE9IHjn+2eRlsrjBdeORi7KiUNC/pAG23I6MdDOFEQRcCSigCj+4/mciFUSA
-SWS4dMbrpb9FNSIcf9dcLxVM7/6KxgJNfZc9XWzUw77Jg8x92Zd0fVhHOux5IZC+UvSKWB4dyfcI
-tE8C3p9bbU9VGyY5vLCAiIb4qQKBgQDLiO24GXrIkswF32YtBBMuVgLGCwU9h9HlO9mKAc2m8Cm1
-jUE5IpzRjTedc9I2qiIMUTwtgnw42auSCzbUeYMURPtDqyQ7p6AjMujp9EPemcSVOK9vXYL0Ptco
-xW9MC0dtV6iPkCN7gOqiZXPRKaFbWADp16p8UAIvS/a5XXk5jwKBgQCKkpHi2EISh1uRkhxljyWC
-iDCiK6JBRsMvpLbc0v5dKwP5alo1fmdR5PJaV2qvZSj5CYNpMAy1/EDNTY5OSIJU+0KFmQbyhsbm
-rdLNLDL4+TcnT7c62/aH01ohYaf/VCbRhtLlBfqGoQc7+sAc8vmKkesnF7CqCEKDyF/dhrxYdQKB
-gC0iZzzNAapayz1+JcVTwwEid6j9JqNXbBc+Z2YwMi+T0Fv/P/hwkX/ypeOXnIUcw0Ih/YtGBVAC
-DQbsz7LcY1HqXiHKYNWNvXgwwO+oiChjxvEkSdsTTIfnK4VSCvU9BxDbQHjdiNDJbL6oar92UN7V
-rBYvChJZF7LvUH4YmVpHAoGAbZ2X7XvoeEO+uZ58/BGKOIGHByHBDiXtzMhdJr15HTYjxK7OgTZm
-gK+8zp4L9IbvLGDMJO8vft32XPEWuvI8twCzFH+CsWLQADZMZKSsBasOZ/h1FwhdMgCMcY+Qlzd4
-JZKjTSu3i7vhvx6RzdSedXEMNTZWN4qlIx3kR5aHcukCgYA9T+Zrvm1F0seQPbLknn7EqhXIjBaT
-P8TTvW/6bdPi23ExzxZn7KOdrfclYRph1LHMpAONv/x2xALIf91UB+v5ohy1oDoasL0gij1houRe
-2ERKKdwz0ZL9SWq6VTdhr/5G994CK72fy5WhyERbDjUIdHaK3M849JJuf8cSrvSb4g==
------END RSA PRIVATE KEY-----
+keyMaterial: > -----BEGIN RSA PRIVATE KEY-----   MIIEoQIBAAKCAQBuLFg5ujHrtm1jnutSuoO8Xe56LlT+HM8v/xkaa39EstM3/aFxTHgElQiJLChp   HungXQ29VTc8rc1bW0lkdi23OH5eqkMHGhvEwqa0HWASUMll4o3o/IX+0f2UcPoKCOVUR+jx71Sg   5AU52EQfanIn3ZQ8lFW7Edp5a3q4DhjGlUKToHVbicL5E+g45zfB95wIyywWZfeW/UUF3LpGZyq/   ebIUlq1qTbHkLbCC2r7RTn8vpQWp47BGVYGtGSBMpTRP5hnbzzuqj3itkiLHjU39S2sJCJ0TrJx5   i8BygR4s3mHKBj8l+ePQxG1kGbF6R4yg6sECmXn17MRQVXODNHZbAgMBAAECggEAY1tsiUsIwDl5   91CXirkYGuVfLyLflXenxfI50mDFms/mumTqloHO7tr0oriHDR5K7wMcY/YY5YkcXNo7mvUVD1pM   ZNUJs7rw9gZRTrf7LylaJ58kOcyajw8TsC4e4LPbFaHwS1d6K8rXh64o6WgW4SrsB6ICmr1kGQI7   3wcfgt5ecIu4TZf0OE9IHjn+2eRlsrjBdeORi7KiUNC/pAG23I6MdDOFEQRcCSigCj+4/mciFUSA   SWS4dMbrpb9FNSIcf9dcLxVM7/6KxgJNfZc9XWzUw77Jg8x92Zd0fVhHOux5IZC+UvSKWB4dyfcI   tE8C3p9bbU9VGyY5vLCAiIb4qQKBgQDLiO24GXrIkswF32YtBBMuVgLGCwU9h9HlO9mKAc2m8Cm1   jUE5IpzRjTedc9I2qiIMUTwtgnw42auSCzbUeYMURPtDqyQ7p6AjMujp9EPemcSVOK9vXYL0Ptco   xW9MC0dtV6iPkCN7gOqiZXPRKaFbWADp16p8UAIvS/a5XXk5jwKBgQCKkpHi2EISh1uRkhxljyWC   iDCiK6JBRsMvpLbc0v5dKwP5alo1fmdR5PJaV2qvZSj5CYNpMAy1/EDNTY5OSIJU+0KFmQbyhsbm   rdLNLDL4+TcnT7c62/aH01ohYaf/VCbRhtLlBfqGoQc7+sAc8vmKkesnF7CqCEKDyF/dhrxYdQKB   gC0iZzzNAapayz1+JcVTwwEid6j9JqNXbBc+Z2YwMi+T0Fv/P/hwkX/ypeOXnIUcw0Ih/YtGBVAC   DQbsz7LcY1HqXiHKYNWNvXgwwO+oiChjxvEkSdsTTIfnK4VSCvU9BxDbQHjdiNDJbL6oar92UN7V   rBYvChJZF7LvUH4YmVpHAoGAbZ2X7XvoeEO+uZ58/BGKOIGHByHBDiXtzMhdJr15HTYjxK7OgTZm   gK+8zp4L9IbvLGDMJO8vft32XPEWuvI8twCzFH+CsWLQADZMZKSsBasOZ/h1FwhdMgCMcY+Qlzd4   JZKjTSu3i7vhvx6RzdSedXEMNTZWN4qlIx3kR5aHcukCgYA9T+Zrvm1F0seQPbLknn7EqhXIjBaT   P8TTvW/6bdPi23ExzxZn7KOdrfclYRph1LHMpAONv/x2xALIf91UB+v5ohy1oDoasL0gij1houRe   2ERKKdwz0ZL9SWq6VTdhr/5G994CK72fy5WhyERbDjUIdHaK3M849JJuf8cSrvSb4g==   -----END RSA PRIVATE KEY-----
 # path = ./p/ApiReference-soap-CreatePlacementGroup.yaml
 ---
-requestID: > d4904fd9-82c2-4ea5-adfe-a9cc3EXAMPLE
+ requestID: > d4904fd9-82c2-4ea5-adfe-a9cc3EXAMPLE
 return: > true
 # path = ./p/ApiReference-soap-CreateSecurityGroup.yaml
 ---
-return: > true
+ return: > true
 # path = ./p/ApiReference-soap-CreateSnapshot.yaml
 ---
-snapshotId: > snap-78a54011
+ snapshotId: > snap-78a54011
 volumeId: > vol-4d826724
 volumeSize: > 10
 status: > pending
@@ -531,18 +480,18 @@ ownerId: > 213457642086
 description: > Daily Backup
 # path = ./p/ApiReference-soap-CreateSpotDatafeedSubscription.yaml
 ---
-spotDatafeedSubscription:
+ spotDatafeedSubscription:
   ownerId: > 254933287430
   bucket: > my-bucket
   prefix:
   state: > open
 # path = ./p/ApiReference-soap-CreateTags.yaml
 ---
-requestId: > 7a62c49f-347e-4fc4-9331-6e8eEXAMPLE
+ requestId: > 7a62c49f-347e-4fc4-9331-6e8eEXAMPLE
 return: > true
 # path = ./p/ApiReference-soap-CreateVolume.yaml
 ---
-volumeId: > vol-4d826724
+ volumeId: > vol-4d826724
 size: > 800
 status: > creating
 createTime: > 2008-05-07T11:51:50.000Z
@@ -550,20 +499,20 @@ availabilityZone: > us-east-1a
 snapshotId:
 # path = ./p/ApiReference-soap-DeleteKeyPair.yaml
 ---
-return: > true
+ return: > true
 # path = ./p/ApiReference-soap-DeletePlacementGroup.yaml
 ---
-requestID: > d4904fd9-82c2-4ea5-adfe-a9cc3EXAMPLE
+ requestID: > d4904fd9-82c2-4ea5-adfe-a9cc3EXAMPLE
 return: > true
 # path = ./p/ApiReference-soap-DeleteSecurityGroup.yaml
 ---
-return: > true
+ return: > true
 # path = ./p/ApiReference-soap-DeleteSnapshot.yaml
 ---
-return: > true
+ return: > true
 # path = ./p/ApiReference-soap-DeleteSpotDatafeedSubscription.yaml
 ---
-return: > true
+ return: > true
 # path = ./p/ApiReference-soap-DeleteTags.yaml
 ---
 resourcesSet:
@@ -575,13 +524,13 @@ tagSet:
     value:
 # path = ./p/ApiReference-soap-DeleteVolume.yaml
 ---
-return: > true
+ return: > true
 # path = ./p/ApiReference-soap-DeregisterImage.yaml
 ---
-return: > true
+ return: > true
 # path = ./p/ApiReference-soap-DescribeAddresses.yaml
 ---
-requestId: > 59dbff89-35bd-4eac-99ed-be587EXAMPLE
+ requestId: > 59dbff89-35bd-4eac-99ed-be587EXAMPLE
 addressesSet:
   -
     publicIp: > 67.202.55.255
@@ -591,7 +540,7 @@ addressesSet:
     instanceId:
 # path = ./p/ApiReference-soap-DescribeAvailabilityZones.yaml
 ---
-requestId: > 59dbff89-35bd-4eac-99ed-be587EXAMPLE
+ requestId: > 59dbff89-35bd-4eac-99ed-be587EXAMPLE
 availabilityZoneInfo:
   -
     zoneName: > us-east-1a
@@ -615,7 +564,7 @@ availabilityZoneInfo:
     messageSet:
 # path = ./p/ApiReference-soap-DescribeBundleTasks.yaml
 ---
-bundlesSet:
+ bundlesSet:
 filterSet:
   -
     name: > s3-bucket
@@ -631,14 +580,14 @@ filterSet:
         value: > failed
 # path = ./p/ApiReference-soap-DescribeImageAttribute.yaml
 ---
-requestId: > 59dbff89-35bd-4eac-99ed-be587EXAMPLE
+ requestId: > 59dbff89-35bd-4eac-99ed-be587EXAMPLE
 imageId: > ami-2bb65342
 productCodes:
   -
     productCode: > 774F4FF8
 # path = ./p/ApiReference-soap-DescribeImages.yaml
 ---
-requestId: > 59dbff89-35bd-4eac-99ed-be587EXAMPLE
+ requestId: > 59dbff89-35bd-4eac-99ed-be587EXAMPLE
 imagesSet:
 -
   imageId: > ami-dd20c3b4
@@ -657,12 +606,12 @@ imagesSet:
   tagSet:
 # path = ./p/ApiReference-soap-DescribeInstanceAttribute.yaml
 ---
-instanceId: > i-10a64379
+ instanceId: > i-10a64379
 kernel:
   value: > aki-f70657b2
 # path = ./p/ApiReference-soap-DescribeInstances.yaml
 ---
-requestId: > 59dbff89-35bd-4eac-99ed-be587EXAMPLE
+ requestId: > 59dbff89-35bd-4eac-99ed-be587EXAMPLE
 reservationSet:
   -
     reservationId: > r-bc7e30d7
@@ -719,7 +668,7 @@ filterSet:
         value: > *Dave*
 # path = ./p/ApiReference-soap-DescribePlacementGroups.yaml
 ---
-placementGroupSet:
+ placementGroupSet:
 filterSet:
   -
     name: > group-name
@@ -728,7 +677,7 @@ filterSet:
         value: > *Project*
 # path = ./p/ApiReference-soap-DescribeRegions.yaml
 ---
-requestId: > 59dbff89-35bd-4eac-99ed-be587EXAMPLE
+ requestId: > 59dbff89-35bd-4eac-99ed-be587EXAMPLE
 regionInfo:
   -
     regionName: > ap-southeast-1
@@ -736,7 +685,7 @@ regionInfo:
     ec2.ap-southeast-1.amazonaws.com
 # path = ./p/ApiReference-soap-DescribeReservedInstancesOfferings.yaml
 ---
-reservedInstancesOfferingsSet:
+ reservedInstancesOfferingsSet:
 filterSet:
   -
     name: > duration
@@ -757,7 +706,7 @@ filterSet:
         value: > Linux/UNIX
 # path = ./p/ApiReference-soap-DescribeReservedInstances.yaml
 ---
-reservedInstancesSet:
+ reservedInstancesSet:
 filterSet:
   -
     name: > duration
@@ -776,7 +725,7 @@ filterSet:
         value: > Linux/UNIX
 # path = ./p/ApiReference-soap-DescribeSecurityGroups.yaml
 ---
-securityGroupSet:
+ securityGroupSet:
 filterSet:
   -
     name: > ip-permission.protocol
@@ -802,14 +751,14 @@ filterSet:
         value: > database_group
 # path = ./p/ApiReference-soap-DescribeSnapshotAttribute.yaml
 ---
-requestId: > 59dbff89-35bd-4eac-99ed-be587EXAMPLE
+ requestId: > 59dbff89-35bd-4eac-99ed-be587EXAMPLE
 snapshotId: > snap-78a54011
 createVolumePermission:
   -
     group: > all
 # path = ./p/ApiReference-soap-DescribeSnapshots.yaml
 ---
-requestId: > 59dbff89-35bd-4eac-99ed-be587EXAMPLE
+ requestId: > 59dbff89-35bd-4eac-99ed-be587EXAMPLE
 snapshotSet:
   -
     snapshotId: > snap-1a2b3c4d
@@ -826,7 +775,7 @@ snapshotSet:
         value: > demo_db_14_backup
 # path = ./p/ApiReference-soap-DescribeSpotDatafeedSubscription.yaml
 ---
-requestId: > 59dbff89-35bd-4eac-99ed-be587EXAMPLE
+ requestId: > 59dbff89-35bd-4eac-99ed-be587EXAMPLE
 spotDatafeedSubscription:
   ownerId: > 999988887777
   bucket: > mybucket
@@ -834,7 +783,7 @@ spotDatafeedSubscription:
   state: > Active
 # path = ./p/ApiReference-soap-DescribeSpotInstanceRequests.yaml
 ---
-SpotInstanceRequestIdSet:
+ SpotInstanceRequestIdSet:
 filterSet:
   -
     name: > type
@@ -885,51 +834,44 @@ filterSet:
         value: > true
 # path = ./p/ApiReference-soap-DetachVolume.yaml
 ---
-volumeId: > vol-4d826724
+ volumeId: > vol-4d826724
 instanceId: > i-6058a509
 device: > /dev/sdh
 status: > detaching
 attachTime: > 2008-05-08T11:51:50.000Z
 # path = ./p/ApiReference-soap-DisassociateAddress.yaml
 ---
-return: > true
+ return: > true
 # path = ./p/ApiReference-soap-GetConsoleOutput.yaml
 ---
-instanceId: > i-28a64341
+ instanceId: > i-28a64341
 timestamp: > 2007-01-03 15:00:00
 output:
-TGludXggdmVyc2lvbiAyLjYuMTYteGVuVSAoYnVpbGRlckBwYXRjaGJhdC5hbWF6b25zYSkgKGdj
-YyB2ZXJzaW9uIDQuMC4xIDIwMDUwNzI3IChSZWQgSGF0IDQuMC4xLTUpKSAjMSBTTVAgVGh1IE9j
-dCAyNiAwODo0MToyNiBTQVNUIDIwMDYKQklPUy1wcm92aWRlZCBwaHlzaWNhbCBSQU0gbWFwOgpY
-ZW46IDAwMDAwMDAwMDAwMDAwMDAgLSAwMDAwMDAwMDZhNDAwMDAwICh1c2FibGUpCjk4ME1CIEhJ
-R0hNRU0gYXZhaWxhYmxlLgo3MjdNQiBMT1dNRU0gYXZhaWxhYmxlLgpOWCAoRXhlY3V0ZSBEaXNh
-YmxlKSBwcm90ZWN0aW9uOiBhY3RpdmUKSVJRIGxvY2t1cCBkZXRlY3Rpb24gZGlzYWJsZWQKQnVp
-bHQgMSB6b25lbGlzdHMKS2VybmVsIGNvbW1hbmQgbGluZTogcm9vdD0vZGV2L3NkYTEgcm8gNApF
-bmFibGluZyBmYXN0IEZQVSBzYXZlIGFuZCByZXN0b3JlLi4uIGRvbmUuCg==
+TGludXggdmVyc2lvbiAyLjYuMTYteGVuVSAoYnVpbGRlckBwYXRjaGJhdC5hbWF6b25zYSkgKGdj   YyB2ZXJzaW9uIDQuMC4xIDIwMDUwNzI3IChSZWQgSGF0IDQuMC4xLTUpKSAjMSBTTVAgVGh1IE9j   dCAyNiAwODo0MToyNiBTQVNUIDIwMDYKQklPUy1wcm92aWRlZCBwaHlzaWNhbCBSQU0gbWFwOgpY   ZW46IDAwMDAwMDAwMDAwMDAwMDAgLSAwMDAwMDAwMDZhNDAwMDAwICh1c2FibGUpCjk4ME1CIEhJ   R0hNRU0gYXZhaWxhYmxlLgo3MjdNQiBMT1dNRU0gYXZhaWxhYmxlLgpOWCAoRXhlY3V0ZSBEaXNh   YmxlKSBwcm90ZWN0aW9uOiBhY3RpdmUKSVJRIGxvY2t1cCBkZXRlY3Rpb24gZGlzYWJsZWQKQnVp   bHQgMSB6b25lbGlzdHMKS2VybmVsIGNvbW1hbmQgbGluZTogcm9vdD0vZGV2L3NkYTEgcm8gNApF   bmFibGluZyBmYXN0IEZQVSBzYXZlIGFuZCByZXN0b3JlLi4uIGRvbmUuCg==
 # path = ./p/ApiReference-soap-GetPasswordData.yaml
 ---
-instanceId: > i-2574e22a
+ instanceId: > i-2574e22a
 timestamp: > 2009-10-24 15:00:00
 passwordData:
 TGludXggdmVyc2lvbiAyLjYuMTYteGVuVSAoYnVpbGRlckBwYXRjaGJhdC5hbWF6b25zYSkgKGdj
 # path = ./p/ApiReference-soap-ImportKeyPair.yaml
 ---
-requestId: > 7a62c49f-347e-4fc4-9331-6e8eEXAMPLE
+ requestId: > 7a62c49f-347e-4fc4-9331-6e8eEXAMPLE
 keyName: > gsg-keypair
 keyFingerprint:
 1f:51:ae:28:bf:89:e9:d8:1f:25:5d:37:2d:7d:b8:ca:9f:f5:f1:6f
 # path = ./p/ApiReference-soap-ModifyImageAttribute.yaml
 ---
-return: > true
+ return: > true
 # path = ./p/ApiReference-soap-ModifyInstanceAttribute.yaml
 ---
-return: > true
+ return: > true
 # path = ./p/ApiReference-soap-ModifySnapshotAttribute.yaml
 ---
-return: > true
+ return: > true
 # path = ./p/ApiReference-soap-MonitorInstances.yaml
 ---
-instancesSet:
+ instancesSet:
   -
     instanceId: > i-43a4412a
     monitoring:
@@ -940,20 +882,20 @@ instancesSet:
       state: > pending
 # path = ./p/ApiReference-soap-PurchaseReservedInstancesOffering.yaml
 ---
-reservedInstancesId: > reservation-1001001
+ reservedInstancesId: > reservation-1001001
 # path = ./p/ApiReference-soap-RebootInstances.yaml
 ---
-return: > true
+ return: > true
 # path = ./p/ApiReference-soap-RegisterImage.yaml
 ---
-requestId: > c1b4f085-70ea-48d2-a417-9fbab67aca92
+ requestId: > c1b4f085-70ea-48d2-a417-9fbab67aca92
 imageId: > ami-b5614bc1
 # path = ./p/ApiReference-soap-ReleaseAddress.yaml
 ---
-return: > true
+ return: > true
 # path = ./p/ApiReference-soap-RequestSpotInstances.yaml
 ---
-spotInstanceRequestSet:
+ spotInstanceRequestSet:
   -
     spotInstanceRequestId: > sir-f102a405
     spotPrice: > 0.50
@@ -974,19 +916,19 @@ spotInstanceRequestSet:
     productDescription:
 # path = ./p/ApiReference-soap-ResetImageAttribute.yaml
 ---
-return: > true
+ return: > true
 # path = ./p/ApiReference-soap-ResetInstanceAttribute.yaml
 ---
-return: > true
+ return: > true
 # path = ./p/ApiReference-soap-ResetSnapshotAttribute.yaml
 ---
-return: > true
+ return: > true
 # path = ./p/ApiReference-soap-RevokeSecurityGroupIngress.yaml
 ---
-return: > true
+ return: > true
 # path = ./p/ApiReference-soap-RunInstances.yaml
 ---
-reservationId: > r-47a5402e
+ reservationId: > r-47a5402e
 ownerId: > 999988887777
 groupSet:
   -
@@ -1045,7 +987,7 @@ instancesSet:
     virtualizationType: > paravirtual
 # path = ./p/ApiReference-soap-StartInstances.yaml
 ---
-instancesSet:
+ instancesSet:
   -
     instanceId: > i-10a64379
     currentState:
@@ -1056,7 +998,7 @@ instancesSet:
       name: > stopped
 # path = ./p/ApiReference-soap-TerminateInstances.yaml
 ---
-instancesSet:
+ instancesSet:
   -
     instanceId: > i-3ea74257
     currentState:
@@ -1067,7 +1009,7 @@ instancesSet:
       name: > running
 # path = ./p/ApiReference-soap-UnmonitorInstances.yaml
 ---
-instancesSet:
+ instancesSet:
   -
     instanceId: > i-43a4412a
     monitoring:
@@ -1078,3 +1020,252 @@ instancesSet:
       state: > disabling
 # path = ./p/docconventions.yaml
 your: > /image.manifest
+# path = ./p/DocConventions.yaml
+your: > /image.manifest
+# path = ./p/ErrorResponses.yaml
+---
+soapenv:
+  Faultcode: > soapenv:Client.NoSuchKey
+  Faultstring: > The specified key does not exist.
+  Detail:
+    Key: > Fred
+# path = ./p/mpUploadComplete.yaml
+---
+Code: > InternalError
+Message: > We encountered an internal error. Please try   again.
+RequestId: > 656c76696e6727732072657175657374
+HostId:
+Uuag1LuByRx9e6j5Onimru9pO4ZVKnJ2Qz7/C1NPcfTWAtRPfTaOFg==
+# path = ./p/mpUploadInitiate.yaml
+---
+ Bucket: > example-bucket
+Key: > example-object
+UploadId:
+VXBsb2FkIElEIGZvciA2aWWpbmcncyBteS1tb3ZpZS5tMnRzIHVwbG9hZA
+# path = ./p/mpUploadListMPUpload.yaml
+---
+ Bucket: > bucket
+KeyMarker:
+UploadIdMarker:
+NextKeyMarker: > my-movie.m2ts
+NextUploadIdMarker:
+YW55IGlkZWEgd2h5IGVsdmluZydzIHVwbG9hZCBmYWlsZWQ
+MaxUploads: > 3
+IsTruncated: > true
+Upload:
+  Key: > my-divisor
+  UploadId:
+  XMgbGlrZSBlbHZpbmcncyBub3QgaGF2aW5nIG11Y2ggbHVjaw
+  Initiator:
+    ID:
+    arn:aws:iam::111111111111:user/some-user-11111a31-17b5-4fb7-9df5-b111111f13de
+    DisplayName:
+    some-user-11111a31-17b5-4fb7-9df5-b111111f13de
+  Owner:
+    ID: > b1d16700c70b0b05597d7acd6a3f92be
+    DisplayName: > delving
+  StorageClass: > STANDARD
+  Initiated: > 2010-11-10T20:48:33.000Z
+Upload:
+  Key: > my-movie.m2ts
+  UploadId:
+  VXBsb2FkIElEIGZvciBlbHZpbmcncyBteS1tb3ZpZS5tMnRzIHVwbG9hZA
+  Initiator:
+    ID: > b1d16700c70b0b05597d7acd6a3f92be
+    DisplayName: > delving
+  Owner:
+    ID: > b1d16700c70b0b05597d7acd6a3f92be
+    DisplayName: > delving
+  StorageClass: > STANDARD
+  Initiated: > 2010-11-10T20:48:33.000Z
+Upload:
+  Key: > my-movie.m2ts
+  UploadId:
+  YW55IGlkZWEgd2h5IGVsdmluZydzIHVwbG9hZCBmYWlsZWQ
+  Initiator:
+    ID:
+    arn:aws:iam::222222222222:user/some-user-22222a31-17b5-4fb7-9df5-b222222f13de
+    DisplayName:
+    some-user-22222a31-17b5-4fb7-9df5-b222222f13de
+  Owner:
+    ID: > b1d16700c70b0b05597d7acd6a3f92be
+    DisplayName: > delving
+  StorageClass: > STANDARD
+  Initiated: > 2010-11-10T20:49:33.000Z
+# path = ./p/mpUploadListParts.yaml
+---
+Bucket: > example-bucket
+Key: > example-object
+UploadId:
+XXBsb2FkIElEIGZvciBlbHZpbmcncyVcdS1tb3ZpZS5tMnRzEEEwbG9hZA
+Initiator:
+  ID:
+  arn:aws:iam::11111111111:user/some-user-11116a31-17b5-4fb7-9df5-b288870f11xx
+  DisplayName:
+  umat-user-11116a31-17b5-4fb7-9df5-b288870f11xx
+Owner:
+  ID: > x1x16700c70b0b05597d7ecd6a3f92be
+  DisplayName: > someName
+StorageClass: > STANDARD
+PartNumberMarker: > 1
+NextPartNumberMarker: > 3
+MaxParts: > 2
+IsTruncated: > true
+Part:
+  PartNumber: > 2
+  LastModified: > 2010-11-10T20:48:34.000Z
+  ETag: > "7778aef83f66abc1fa1e8477f296d394"
+  Size: > 10485760
+Part:
+  PartNumber: > 3
+  LastModified: > 2010-11-10T20:48:33.000Z
+  ETag: > "aaaa18db4cc2f85cedef654fccc4a4x8"
+  Size: > 10485760
+# path = ./p/RESTBucketGETacl.yaml
+---
+Owner:
+  ID: > 8a6925ce4adee97f21c32aa379004fef
+  DisplayName: > CustomersName@amazon.com
+AccessControlList:
+  Grant:
+    Grantee:
+      ID: > 8a6925ce4adf57f21c32aa379004fef
+      DisplayName: > CustomersName@amazon.com
+    Permission: > FULL_CONTROL
+# path = ./p/RESTBucketGETlocation.yaml
+---
+EU
+# path = ./p/RESTBucketGETlogging.yaml
+---
+# path = ./p/RESTBucketGETnotification.yaml
+---
+TopicConfiguration:
+  Topic: > arn:aws:sns:us-east-1:123456789012:myTopic
+  Event: > s3:ReducedRedundancyLostObject
+# path = ./p/RESTBucketGETversioningStatus.yaml
+---
+ Status: > Enabled
+# path = ./p/RESTBucketGET.yaml
+---
+Name: > johnsmith
+Prefix: > photos/2006/
+Marker:
+MaxKeys: > 1000
+Delimiter: > /
+IsTruncated: > false
+Contents:
+  Key: > photos/2006/index.html
+  LastModified: > 2009-01-01T12:00:00.000Z
+  ETag: > "ce1acdafcc879d7eee54cf4e97334078"
+  Size: > 1234
+  Owner:
+    ID: > 214153b66967d86f031c7487b4566cb1b
+    DisplayName: > John Smith
+  StorageClass: > STANDARD
+CommonPrefixes:
+  Prefix: > photos/2006/January/
+# path = ./p/RESTObjectCOPY.yaml
+---
+LastModified: > 2009-10-28T22:32:00
+ETag: > "9b2cf535f27731c974343645a3985328"
+# path = ./p/RESTObjectGETacl.yaml
+---
+Owner:
+  ID: > 8a6925ce4adf588a421c32aa379004fef
+  DisplayName: > mdtd@amazon.com
+AccessControlList:
+  Grant:
+    Grantee:
+      ID:
+      8a6925ce4adf588a4532142d3f74dd8c71fa124b1ddee97f21c32aa379004fef
+      DisplayName: > mdtd@amazon.com
+    Permission: > FULL_CONTROL
+# path = ./p/RESTObjectGETtorrent.yaml
+---
+# path = ./p/RESTrequestPaymentGET.yaml
+---
+ Payer: > Requester
+# path = ./p/SOAPCopyObject.yaml
+---
+CopyObjectResponse:
+  ETag: > "828ef3fdfa96f00ad9f27c383fc9ac7f"
+  LastModified: > 2008-02-18T13:54:10.183Z
+# path = ./p/SOAPCreateBucket.yaml
+---
+ CreateBucketResponse:
+  Bucket: > quotes
+# path = ./p/SOAPDeleteBucket.yaml
+---
+ DeleteBucketResponse:
+  Code: > 204
+  Description: > No Content
+# path = ./p/SOAPDeleteObject.yaml
+---
+ DeleteObjectResponse:
+  Code: > 200
+  Description: > OK
+# path = ./p/SOAPGetBucketLoggingStatus.yaml
+---
+soapenv:
+soapenv:
+  GetBucketLoggingStatusResponse:
+     GetBucketLoggingStatusResponse:
+      LoggingEnabled:
+        TargetBucket: > mylogs
+        TargetPrefix: > mybucket-access_log-
+# path = ./p/SOAPGetObject.yaml
+---
+GetObjectResponse:
+  Status:
+    Code: > 200
+    Description: > OK
+  Metadata:
+    Name: > Content-Type
+    Value: > text/plain
+  Metadata:
+    Name: > family
+    Value: > Muntz
+  Data: > aGEtaGE=
+  LastModified: > 2006-01-01T12:00:00.000Z
+  ETag: > "828ef3fdfa96f00ad9f27c383fc9ac7f"
+# path = ./p/SOAPListBucket.yaml
+---
+Name: > backups
+Prefix: > notes/
+MaxKeys: > 1000
+Delimiter: > /
+IsTruncated: > false
+Contents:
+  Key: > notes/todos.txt
+  LastModified: > 2006-01-01T12:00:00.000Z
+  ETag: > "828ef3fdfa96f00ad9f27c383fc9ac7f"
+  Size: > 5126
+  StorageClass: > STANDARD
+  Owner:
+    ID: > bcaf1ffd86f41ce161ca5fb16fd081034f
+    DisplayName: > webfile
+  StorageClass: > STANDARD
+CommonPrefixes:
+  Prefix: > notes/2005-05-23/
+CommonPrefixes:
+  Prefix: > notes/2005-05-28/
+# path = ./p/SOAPPutObject.yaml
+---
+PutObjectResponse:
+  ETag: > "828ef3fdfa96f00ad9f27c383fc9ac7f"
+  LastModified: > 2006-03-01T12:00:00.183Z
+# path = ./p/SOAPSetBucketAccessControlPolicy.yaml
+---
+ GetBucketAccessControlPolicyResponse:
+  Code: > 200
+  Description: > OK
+# path = ./p/SOAPSetBucketLoggingStatus.yaml
+---
+soapenv:
+soapenv:
+  SetBucketLoggingStatusResponse:
+# path = ./p/SOAPSetObjectAccessControlPolicy.yaml
+---
+ SetObjectAccessControlPolicyResponse:
+  Code: > 200
+  Description: > OK

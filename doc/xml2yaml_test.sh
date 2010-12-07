@@ -10,6 +10,7 @@ ls o/*.eg \
       $_f_2yaml < $file > ./p/$name
   done
 
+echo >&2 ":: Flush all outputs to $0.yaml"
 for f in ./p/*; do
   echo "# path = $f"
   cat $f
