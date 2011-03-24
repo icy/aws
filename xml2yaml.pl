@@ -1,24 +1,20 @@
 #!/usr/bin/env perl
 
+# This function is copied from the main source 'aws'
 sub xml2yaml {
-  my($result) = "";
-  my($rubySymbol) = ":" if $ruby;
-
+  my($rubySymbol) = "";
+  $rubySymbol = ":" if $ruby;
   while (<STDIN>) { $result .= $_; }
 
-  #$result =~ s#(<[^/]+>)[\n\t ]+([^<]+<)#\1\2#g;
-  #$result =~ s#\n# #g;
-  #$result =~ s#> #>\n#g;                            # remove all '\n's in data
-
-  #print $result;
-
+  $result =~ s#\n# #g;
+  $result =~ s#> #>\n#g;                            # remove all '\n's
   $result =~ s#</.*>##g;                            # remove closing tags
-  $result =~ s#<([a-z0-9]*).*>#$rubySymbol\1: #gi;  # opening tags -> symbols
+  $result =~ s#<([a-z0-9:]*).*>#$rubySymbol\1: #gi; # opening tags -> symbols
   $result =~ s#($rubySymbol[^:]+): (.+)#\1: > \2#g; # opening tags -> symbols
-  $result =~ s#:?(.*)/:#\1: nil#g;                  # empty values
-  $result =~ s#:?item: #-#gi;                       # array items
+  $result =~ s#:?(.*)/:#\1:#g;                      # empty values
+  $result =~ s#:?(item|bucket|member): #- #gi;      # array items
   $result =~ s#\t#  #g;                             # tabs -> spaces
-  $result =~ s#^[\t :]*\n##mg;                      # remove all empty lines
+  $result =~ s#^[ :]*\n##mg;                        # remove all empty lines
   $result =~ s#[ ]+$##gm;                           # remove all trailing spaces
   $result =~ s#^[^ \n]+:\n#---\n#;                  # new document indicator
   $result =~ s#^  ##mg;                             # shift left
