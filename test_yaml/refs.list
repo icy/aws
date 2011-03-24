@@ -18,6 +18,7 @@ http://docs.amazonwebservices.com/AmazonS3/latest/API/objectPutVersions.html
 http://docs.amazonwebservices.com/AmazonS3/latest/API/postVersions.html
 http://docs.amazonwebservices.com/AmazonS3/latest/API/RESTBucketDELETE.html
 http://docs.amazonwebservices.com/AmazonS3/latest/API/RESTBucketDELETEpolicy.html
+http://docs.amazonwebservices.com/AmazonS3/latest/API/RESTBucketDELETEwebsite.html
 http://docs.amazonwebservices.com/AmazonS3/latest/API/RESTBucketGETacl.html
 http://docs.amazonwebservices.com/AmazonS3/latest/API/RESTBucketGET.html
 http://docs.amazonwebservices.com/AmazonS3/latest/API/RESTBucketGETlocation.html
@@ -26,6 +27,7 @@ http://docs.amazonwebservices.com/AmazonS3/latest/API/RESTBucketGETnotification.
 http://docs.amazonwebservices.com/AmazonS3/latest/API/RESTBucketGETpolicy.html
 http://docs.amazonwebservices.com/AmazonS3/latest/API/RESTBucketGETVersion.html
 http://docs.amazonwebservices.com/AmazonS3/latest/API/RESTBucketGETversioningStatus.html
+http://docs.amazonwebservices.com/AmazonS3/latest/API/RESTBucketGETwebsite.html
 http://docs.amazonwebservices.com/AmazonS3/latest/API/RESTBucketOps.html
 http://docs.amazonwebservices.com/AmazonS3/latest/API/RESTBucketPUTacl.html
 http://docs.amazonwebservices.com/AmazonS3/latest/API/RESTBucketPUT.html
@@ -33,6 +35,7 @@ http://docs.amazonwebservices.com/AmazonS3/latest/API/RESTBucketPUTlogging.html
 http://docs.amazonwebservices.com/AmazonS3/latest/API/RESTBucketPUTnotification.html
 http://docs.amazonwebservices.com/AmazonS3/latest/API/RESTBucketPUTpolicy.html
 http://docs.amazonwebservices.com/AmazonS3/latest/API/RESTBucketPUTVersioningStatus.html
+http://docs.amazonwebservices.com/AmazonS3/latest/API/RESTBucketPUTwebsite.html
 http://docs.amazonwebservices.com/AmazonS3/latest/API/RESTCommonRequestHeaders.html
 http://docs.amazonwebservices.com/AmazonS3/latest/API/RESTCommonResponseHeaders.html
 http://docs.amazonwebservices.com/AmazonS3/latest/API/RESTObjectCOPY.html

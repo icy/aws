@@ -1,2 +1,170 @@
-lynx -dump http://docs.amazonwebservices.com/AWSEC2/latest/APIReference/_toc.html > toc.dump
-lynx -dump http://docs.amazonwebservices.com/AmazonS3/latest/API/_toc.html >> toc.dump
+YAML support
+------------
+
+  'aws' supports XML output. For example:
+
+      aws describe-instances --xml
+
+  The XML output is handled by the function (xmlpp); the code seems to be
+  tricky, but it works very well :) Thanks to Timothy Kay.
+
+  My question is: how to convert this output into YAML format?
+
+  We may think of various ways:
+
+  1) Piping
+
+    For example:
+              aws describe-instances --xml | my_xml2yaml_tool
+
+    Actually I didn't find a suitable tool. Converting a string from
+    XML format to YAML format isn't easy, especially when dealing with
+    arrays. The standard tool may expose some extra information, that
+    is completely unnecessary.
+
+  2) Write 'yamlpp'
+
+    We can write another function 'yamlpp' (similar to 'xmlpp'); but
+    this function will be so expensive, as the main routines of these
+    functions are the same
+
+  3) Writing 'pipe' inside 'aws' (my implementation)
+
+    This is as same as 1), but the 'pipe' is supported by 'aws', not
+    other tool. Hence users can invoke
+                    aws describe-instances --yaml
+
+    My implementation is based on the format of XML output of (xmlpp)
+
+                  Amazon output => xmlpp => xml2yaml
+
+    The function (xml2yaml) knows nothing about the contents of data;
+    it assumes that the format of XML output by (xmlpp) is *standard*.
+    More precisely, it assumes that the output of (xmlpp) is indented:
+
+              <foo>
+                <bar>
+                  contents on this line
+                  and this line
+                </bar>
+              </foo>
+
+    My fuction (xml2yaml) simply converts such contents to
+              foo:
+                bar: contents on this line and this line
+
+    As you can see, multiple lines (inside <bar> ... </bar>) are joined.
+    You may ask how this affects the results. Actually, the only case
+    when the output are spanned in multiple lines, is that when data are
+    encrypted in base64 format. For example
+
+              <bar>
+                ZiBvIG8gbyBvIG8gbyBiIG
+                EgYSBhIGEgYSBhIHIK
+              </bar>
+
+    When joining such lines, we would have
+
+              ZiBvIG8gbyBvIG8gbyBiIG EgYSBhIGEgYSBhIHIK
+
+    A space has no role when you decoding! So that goes well.
+
+Usage
+-----
+
+  Simply use '--yaml' option when invoking 'aws' command
+
+          aws --yaml         <other arguments>
+          aws --yaml --ruby  <other arguments>
+
+  The option '--ruby' is used when you want Ruby symbols in the output.
+  For example,
+              :foo
+                :bar: contents
+
+Notes on the YAML output
+------------------------
+
+  1) The following XML tags are considered as array mark:
+
+      - item
+      - bucket
+      - member
+
+  2) The requrestId will vary everytime you invoke the command
+
+Example
+-------
+
+  The following is YAML output when invoking 'aws dlb --yaml'
+
+            ---
+            DescribeLoadBalancersResult:
+              LoadBalancerDescriptions:
+                -
+                  LoadBalancerName: > foobar
+                  CreatedTime: > 2010-05-25T03:31:08.360Z
+                  DNSName: > foobar.ap-southeast-1.elb.amazonaws.com
+                  HealthCheck:
+                    Interval: > 30
+                    Target: > HTTP:1080/ping
+                    HealthyThreshold: > 10
+                    Timeout: > 5
+                    UnhealthyThreshold: > 2
+                  ListenerDescriptions:
+                    -
+                      PolicyNames:
+                      Listener:
+                        Protocol: > HTTP
+                        LoadBalancerPort: > 80
+                        InstancePort: > 1080
+                  Instances:
+                    -
+                      InstanceId: > i-111111
+                    -
+                      InstanceId: > i-222222
+                  Policies:
+                    AppCookieStickinessPolicies:
+                    LBCookieStickinessPolicies:
+                  AvailabilityZones:
+                    - > ap-southeast-1a
+            ResponseMetadata:
+              RequestId: > 11111111-1111-1111-1111-111111111111
+
+How to test
+-----------
+
+  The following functions are tested at my daily work
+
+    -  Describe Instance
+    -  Describe Security Group
+    -  Adding rule / Removing rule from security group
+    -  Describe Keys
+    -  ELB functions
+    -  S3 listing
+
+  I am sorry to say that I have no way to test other functions, as I have
+  no chance to work with them. They aren't free to test :)
+
+The stupid test
+---------------
+
+  There is a stupid test. It reads some examples from Amazon documentation,
+  and convert XML output to YAML output. Actually this test doesn't work
+  as expected, as the Amazon examples have a different format, which differs
+  from the format of 'aws' output.
+
+  Invoking:
+
+      $ # install lynx, wget, sed, grep
+      $ mkdir -pv ./i ./o ./p             # making temporary directories
+                                          # ./i/: files from Amazon
+                                          # ./o/: examples (extracted)
+                                          # ./p/: yaml output
+      $ ./get_examples.sh --downloading
+      $ ./xml2yaml_test.sh
+
+  The final output is 'xml2yaml.sh.yaml'.
+
+--
+icy, 2011 April 24

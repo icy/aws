@@ -1,6 +1,11 @@
 #!/bin/sh
 
+mkdir -pv ./i ./o
+
 if [ "$1" = "--download" ]; then
+  lynx -dump http://docs.amazonwebservices.com/AWSEC2/latest/APIReference/_toc.html > toc.dump
+  lynx -dump http://docs.amazonwebservices.com/AmazonS3/latest/API/_toc.html >> toc.dump
+
   # Fetch list of references
   cat toc.dump \
     | grep http:// \
